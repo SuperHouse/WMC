@@ -1,31 +1,19 @@
-Chair Control Breakout Mini
-===========================
+Flysky FS-i6 CAN Interface
+==========================
 Copyright 2018 SuperHouse Automation Pty Ltd <www.superhouse.tv>  
 Designed by Jonathan Oxer
 
-Connects between an electric wheelchair input device and the chair
-controller, so that the input device can be read by an Arduino and
-redirected to another system.
-
-The output can be isolated so that the chair won't receive the input
-signals, preventing it from moving while the input is being used for
-another purpose such as controlling a computer or remote control
-device.
-
-The breakout can send the output to either a connected USB host such
-as a computer, or other devices via CAN bus so the wheelchair controls
-can be used to fly a drone or drive a remote control car.
+Mounts inside a Flysky FS-i6 remote control transmitter to provide a
+CAN bus interface for external control.
 
 Features:
 
- * 1 x input device connection.
- * 1 x input device pass-through output
- * CAN bus
- * Can derives 12V power from the host wheelchair controller or separately
+ * Takes power from transmitter header.
+ * CAN bus.
 
 More information is available at:
 
-  http://www.superhouse.tv/cbmini
+  http://www.superhouse.tv/fsi6can
 
 
 INSTALLATION
