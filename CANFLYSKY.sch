@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3190,12 +3190,12 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <plain>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <text x="10.16" y="127" size="2.54" layer="94" ratio="12">ATmega32m1 MCU</text>
-<text x="7.62" y="20.32" size="3.048" layer="94">Flysky CAN Interface</text>
+<text x="7.62" y="20.32" size="3.048" layer="94">Flysky FS-i6 CAN Interface</text>
 <text x="38.1" y="14.478" size="1.778" layer="94">V1.0 (2018-08-20)</text>
-<text x="7.62" y="14.478" size="1.778" layer="94">SKU: FSCAN</text>
+<text x="7.62" y="14.478" size="1.778" layer="94">SKU: FSI6CAN</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2018 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
-<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/fscan</text>
+<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/fsi6can</text>
 <text x="109.22" y="175.26" size="2.54" layer="94" ratio="12">Power / Status</text>
 <frame x1="5.08" y1="12.7" x2="109.22" y2="25.4" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
@@ -3222,14 +3222,34 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <wire x1="160.02" y1="68.58" x2="160.02" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
-<instance part="C2" gate="G$1" x="124.46" y="152.4"/>
-<instance part="GND8" gate="1" x="124.46" y="142.24"/>
-<instance part="C1" gate="G$1" x="111.76" y="152.4"/>
-<instance part="GND11" gate="1" x="111.76" y="142.24"/>
-<instance part="ICSP" gate="A" x="76.2" y="154.94"/>
-<instance part="GND9" gate="1" x="96.52" y="149.86"/>
-<instance part="S21" gate="1" x="50.8" y="91.44"/>
-<instance part="GND15" gate="1" x="73.66" y="55.88"/>
+<instance part="C2" gate="G$1" x="124.46" y="152.4" smashed="yes">
+<attribute name="NAME" x="125.984" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="125.984" y="150.241" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="124.46" y="142.24" smashed="yes">
+<attribute name="VALUE" x="121.92" y="139.7" size="1.778" layer="96"/>
+</instance>
+<instance part="C1" gate="G$1" x="111.76" y="152.4" smashed="yes">
+<attribute name="NAME" x="113.284" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.284" y="150.241" size="1.778" layer="96"/>
+</instance>
+<instance part="GND11" gate="1" x="111.76" y="142.24" smashed="yes">
+<attribute name="VALUE" x="109.22" y="139.7" size="1.778" layer="96"/>
+</instance>
+<instance part="ICSP" gate="A" x="76.2" y="154.94" smashed="yes">
+<attribute name="NAME" x="69.85" y="160.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="69.85" y="147.32" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="96.52" y="149.86" smashed="yes">
+<attribute name="VALUE" x="93.98" y="147.32" size="1.778" layer="96"/>
+</instance>
+<instance part="S21" gate="1" x="50.8" y="91.44" smashed="yes">
+<attribute name="NAME" x="46.355" y="100.965" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.482" y="98.679" size="1.778" layer="96"/>
+</instance>
+<instance part="GND15" gate="1" x="73.66" y="55.88" smashed="yes">
+<attribute name="VALUE" x="71.12" y="53.34" size="1.778" layer="96"/>
+</instance>
 <instance part="C5" gate="G$1" x="55.88" y="78.74" smashed="yes" rot="R90">
 <attribute name="NAME" x="52.324" y="81.661" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.324" y="74.041" size="1.778" layer="96"/>
@@ -3238,18 +3258,33 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="52.324" y="66.421" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.324" y="58.801" size="1.778" layer="96"/>
 </instance>
-<instance part="GND16" gate="1" x="48.26" y="55.88"/>
-<instance part="XTL1" gate="G$1" x="63.5" y="71.12" rot="R90"/>
-<instance part="GND13" gate="1" x="149.86" y="142.24"/>
-<instance part="R8" gate="G$1" x="149.86" y="160.02" rot="R90"/>
-<instance part="LED1" gate="G$1" x="149.86" y="149.86"/>
-<instance part="U1" gate="G$1" x="195.58" y="30.48"/>
+<instance part="GND16" gate="1" x="48.26" y="55.88" smashed="yes">
+<attribute name="VALUE" x="45.72" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="XTL1" gate="G$1" x="63.5" y="71.12" smashed="yes" rot="R90"/>
+<instance part="GND13" gate="1" x="149.86" y="142.24" smashed="yes">
+<attribute name="VALUE" x="147.32" y="139.7" size="1.778" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="149.86" y="160.02" smashed="yes" rot="R90">
+<attribute name="NAME" x="148.3614" y="156.21" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="153.162" y="156.21" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LED1" gate="G$1" x="149.86" y="149.86" smashed="yes">
+<attribute name="NAME" x="153.416" y="145.288" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="155.575" y="145.288" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="U1" gate="G$1" x="195.58" y="30.48" smashed="yes"/>
 <instance part="R17" gate="G$1" x="218.44" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="222.25" y="24.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="222.25" y="22.098" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="236.22" y="35.56" rot="R180"/>
-<instance part="GND6" gate="1" x="228.6" y="12.7"/>
+<instance part="JP1" gate="G$1" x="236.22" y="35.56" smashed="yes" rot="R180">
+<attribute name="VALUE" x="241.3" y="43.18" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="241.3" y="27.178" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="GND6" gate="1" x="228.6" y="12.7" smashed="yes">
+<attribute name="VALUE" x="226.06" y="10.16" size="1.778" layer="96"/>
+</instance>
 <instance part="R1" gate="G$1" x="190.5" y="160.02" smashed="yes">
 <attribute name="NAME" x="189.23" y="161.5186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.23" y="156.718" size="1.778" layer="96"/>
@@ -3258,7 +3293,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="199.644" y="150.241" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.644" y="155.321" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="198.12" y="144.78"/>
+<instance part="GND1" gate="1" x="198.12" y="144.78" smashed="yes">
+<attribute name="VALUE" x="195.58" y="142.24" size="1.778" layer="96"/>
+</instance>
 <instance part="R2" gate="G$1" x="190.5" y="139.7" smashed="yes">
 <attribute name="NAME" x="189.23" y="141.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.23" y="136.398" size="1.778" layer="96"/>
@@ -3267,7 +3304,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="199.644" y="129.921" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.644" y="135.001" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="198.12" y="124.46"/>
+<instance part="GND2" gate="1" x="198.12" y="124.46" smashed="yes">
+<attribute name="VALUE" x="195.58" y="121.92" size="1.778" layer="96"/>
+</instance>
 <instance part="R3" gate="G$1" x="190.5" y="119.38" smashed="yes">
 <attribute name="NAME" x="189.23" y="120.8786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.23" y="116.078" size="1.778" layer="96"/>
@@ -3276,7 +3315,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="199.644" y="109.601" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.644" y="114.681" size="1.778" layer="96"/>
 </instance>
-<instance part="GND3" gate="1" x="198.12" y="104.14"/>
+<instance part="GND3" gate="1" x="198.12" y="104.14" smashed="yes">
+<attribute name="VALUE" x="195.58" y="101.6" size="1.778" layer="96"/>
+</instance>
 <instance part="R4" gate="G$1" x="190.5" y="99.06" smashed="yes">
 <attribute name="NAME" x="189.23" y="100.5586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="189.23" y="95.758" size="1.778" layer="96"/>
@@ -3285,22 +3326,60 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="199.644" y="89.281" size="1.778" layer="95"/>
 <attribute name="VALUE" x="199.644" y="94.361" size="1.778" layer="96"/>
 </instance>
-<instance part="GND4" gate="1" x="198.12" y="83.82"/>
-<instance part="JP3" gate="G$1" x="15.24" y="152.4" rot="MR180"/>
-<instance part="P+1" gate="G$1" x="25.4" y="165.1"/>
-<instance part="GND10" gate="1" x="27.94" y="142.24"/>
-<instance part="JP2" gate="G$1" x="223.52" y="160.02" rot="R180"/>
-<instance part="JP4" gate="G$1" x="223.52" y="139.7" rot="R180"/>
-<instance part="JP5" gate="G$1" x="223.52" y="119.38" rot="R180"/>
-<instance part="JP6" gate="G$1" x="223.52" y="99.06" rot="R180"/>
-<instance part="GND5" gate="1" x="33.02" y="86.36"/>
-<instance part="H6" gate="G$1" x="20.32" y="96.52"/>
-<instance part="P+2" gate="G$1" x="73.66" y="111.76"/>
-<instance part="P+3" gate="G$1" x="149.86" y="167.64"/>
-<instance part="P+4" gate="G$1" x="124.46" y="167.64"/>
-<instance part="P+5" gate="G$1" x="182.88" y="45.72"/>
-<instance part="P+6" gate="G$1" x="96.52" y="157.48"/>
-<instance part="P+7" gate="G$1" x="40.64" y="111.76"/>
+<instance part="GND4" gate="1" x="198.12" y="83.82" smashed="yes">
+<attribute name="VALUE" x="195.58" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="JP3" gate="G$1" x="15.24" y="152.4" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="12.7" y="162.56" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="12.7" y="144.018" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="P+1" gate="G$1" x="25.4" y="165.1" smashed="yes">
+<attribute name="VALUE" x="24.384" y="168.656" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="27.94" y="142.24" smashed="yes">
+<attribute name="VALUE" x="25.4" y="139.7" size="1.778" layer="96"/>
+</instance>
+<instance part="JP2" gate="G$1" x="223.52" y="160.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="226.06" y="165.1" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="226.06" y="156.718" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="JP4" gate="G$1" x="223.52" y="139.7" smashed="yes" rot="R180">
+<attribute name="VALUE" x="226.06" y="144.78" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="226.06" y="136.398" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="JP5" gate="G$1" x="223.52" y="119.38" smashed="yes" rot="R180">
+<attribute name="VALUE" x="226.06" y="124.46" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="226.06" y="116.078" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="JP6" gate="G$1" x="223.52" y="99.06" smashed="yes" rot="R180">
+<attribute name="VALUE" x="226.06" y="104.14" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="226.06" y="95.758" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="GND5" gate="1" x="33.02" y="86.36" smashed="yes">
+<attribute name="VALUE" x="30.48" y="83.82" size="1.778" layer="96"/>
+</instance>
+<instance part="H6" gate="G$1" x="20.32" y="96.52" smashed="yes">
+<attribute name="VALUE" x="15.24" y="86.36" size="1.778" layer="96"/>
+<attribute name="NAME" x="15.24" y="107.442" size="1.778" layer="95"/>
+</instance>
+<instance part="P+2" gate="G$1" x="73.66" y="111.76" smashed="yes">
+<attribute name="VALUE" x="72.644" y="115.316" size="1.778" layer="96"/>
+</instance>
+<instance part="P+3" gate="G$1" x="149.86" y="167.64" smashed="yes">
+<attribute name="VALUE" x="148.844" y="171.196" size="1.778" layer="96"/>
+</instance>
+<instance part="P+4" gate="G$1" x="124.46" y="167.64" smashed="yes">
+<attribute name="VALUE" x="123.444" y="171.196" size="1.778" layer="96"/>
+</instance>
+<instance part="P+5" gate="G$1" x="182.88" y="45.72" smashed="yes">
+<attribute name="VALUE" x="181.864" y="49.276" size="1.778" layer="96"/>
+</instance>
+<instance part="P+6" gate="G$1" x="96.52" y="157.48" smashed="yes">
+<attribute name="VALUE" x="95.504" y="161.036" size="1.778" layer="96"/>
+</instance>
+<instance part="P+7" gate="G$1" x="40.64" y="111.76" smashed="yes">
+<attribute name="VALUE" x="39.624" y="115.316" size="1.778" layer="96"/>
+</instance>
 <instance part="R5" gate="G$1" x="66.04" y="104.14" smashed="yes" rot="R180">
 <attribute name="NAME" x="62.23" y="108.1786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="105.918" size="1.778" layer="96"/>
@@ -3309,12 +3388,28 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="47.244" y="109.601" size="1.778" layer="95"/>
 <attribute name="VALUE" x="47.244" y="107.061" size="1.778" layer="96"/>
 </instance>
-<instance part="IC1" gate="G$1" x="104.14" y="76.2"/>
-<instance part="GND7" gate="1" x="78.74" y="38.1"/>
-<instance part="LED2" gate="G$1" x="27.94" y="48.26"/>
-<instance part="GND12" gate="1" x="27.94" y="38.1"/>
-<instance part="1K" gate="G$1" x="27.94" y="58.42" rot="R90"/>
-<instance part="C4" gate="G$1" x="137.16" y="152.4"/>
+<instance part="IC1" gate="G$1" x="104.14" y="76.2" smashed="yes">
+<attribute name="NAME" x="93.98" y="38.1" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="110.49" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="78.74" y="38.1" smashed="yes">
+<attribute name="VALUE" x="76.2" y="35.56" size="1.778" layer="96"/>
+</instance>
+<instance part="LED2" gate="G$1" x="27.94" y="48.26" smashed="yes">
+<attribute name="NAME" x="31.496" y="43.688" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="33.655" y="43.688" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND12" gate="1" x="27.94" y="38.1" smashed="yes">
+<attribute name="VALUE" x="25.4" y="35.56" size="1.778" layer="96"/>
+</instance>
+<instance part="1K" gate="G$1" x="27.94" y="58.42" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.4414" y="54.61" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="31.242" y="54.61" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C4" gate="G$1" x="137.16" y="152.4" smashed="yes">
+<attribute name="NAME" x="138.684" y="155.321" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.684" y="150.241" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
