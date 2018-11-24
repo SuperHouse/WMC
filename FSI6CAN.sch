@@ -2557,9 +2557,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <packages>
-<package name="2X03">
+<package name="2X03" urn="urn:adsk.eagle:footprint:22348/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
@@ -2598,7 +2598,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 </package>
-<package name="2X03/90">
+<package name="2X03/90" urn="urn:adsk.eagle:footprint:22349/1" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
@@ -2635,8 +2635,22 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03/90" urn="urn:adsk.eagle:package:22464/2" type="model" library_version="3">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03/90"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINH2X3">
+<symbol name="PINH2X3" urn="urn:adsk.eagle:symbol:22347/1" library_version="3">
 <wire x1="-6.35" y1="-5.08" x2="8.89" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="-5.08" x2="8.89" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
@@ -2652,7 +2666,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-2X3" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-2X3" urn="urn:adsk.eagle:component:22532/3" prefix="JP" uservalue="yes" library_version="3">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINH2X3" x="0" y="0"/>
@@ -2667,6 +2681,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22462/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2680,6 +2697,9 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22464/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -2688,18 +2708,18 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </deviceset>
 </devicesets>
 </library>
-<library name="supply1">
+<library name="supply1" urn="urn:adsk.eagle:library:371">
 <packages>
 </packages>
 <symbols>
-<symbol name="GND">
+<symbol name="GND" urn="urn:adsk.eagle:symbol:26925/1" library_version="1">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="GND" prefix="GND">
+<deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
@@ -3093,6 +3113,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <pin name="CANL" x="20.32" y="2.54" length="middle" rot="R180"/>
 <pin name="CANH" x="20.32" y="5.08" length="middle" rot="R180"/>
 <pin name="RS" x="20.32" y="7.62" length="middle" rot="R180"/>
+<text x="0" y="10.414" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3134,8 +3156,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <part name="GND8" library="SparkFun" deviceset="GND" device=""/>
 <part name="C1" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="100nF"/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
-<part name="ICSP" library="pinhead" deviceset="PINHD-2X3" device="" value="ICSP"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="ICSP" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2" value="ICSP"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="S21" library="freetronics-jon" deviceset="TAC_SWITCH_2PIN" device="SMT" value="RESET"/>
 <part name="GND15" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="freetronics-master-v1.1" deviceset="CAP" device="0603" value="15pF"/>
@@ -3145,7 +3167,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
 <part name="LED1" library="freetronics-jon" deviceset="LED" device="0603" value="BLUE"/>
-<part name="U1" library="freetronics-original" deviceset="MCP2551" device=""/>
+<part name="IC2" library="freetronics-original" deviceset="MCP2551" device=""/>
 <part name="R17" library="freetronics-master-v1.1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="JP1" library="freetronics-jon" deviceset="M04" device="PTH" value="CAN"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
@@ -3203,7 +3225,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <wire x1="5.08" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="50.8" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="97" style="longdash"/>
-<wire x1="104.14" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="104.14" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="104.14" y1="134.62" x2="104.14" y2="180.34" width="0.1524" layer="97" style="longdash"/>
 <text x="13.97" y="88.9" size="1.778" layer="94" rot="R90">FTDI Header</text>
 <text x="139.7" y="104.14" size="1.778" layer="97">~</text>
@@ -3214,12 +3236,16 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <text x="162.56" y="60.96" size="2.54" layer="94" ratio="12">CAN Transceiver</text>
 <wire x1="50.8" y1="134.62" x2="50.8" y2="180.34" width="0.1524" layer="97" style="longdash"/>
 <text x="55.88" y="175.26" size="2.54" layer="94" ratio="12">ICSP Header</text>
-<wire x1="154.94" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="97" style="longdash"/>
-<wire x1="160.02" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="97" style="longdash"/>
-<wire x1="154.94" y1="68.58" x2="154.94" y2="5.08" width="0.1524" layer="97" style="longdash"/>
-<wire x1="160.02" y1="134.62" x2="160.02" y2="180.34" width="0.1524" layer="97" style="longdash"/>
-<text x="7.62" y="27.94" size="1.778" layer="97">Link pins for out x2 and y2</text>
-<wire x1="160.02" y1="68.58" x2="160.02" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="157.48" y1="68.58" x2="162.56" y2="68.58" width="0.1524" layer="97" style="longdash"/>
+<wire x1="162.56" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="97" style="longdash"/>
+<wire x1="157.48" y1="68.58" x2="157.48" y2="5.08" width="0.1524" layer="97" style="longdash"/>
+<wire x1="162.56" y1="134.62" x2="162.56" y2="180.34" width="0.1524" layer="97" style="longdash"/>
+<wire x1="162.56" y1="68.58" x2="162.56" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<text x="142.24" y="53.34" size="1.778" layer="97">Out Y2</text>
+<text x="142.24" y="66.04" size="1.778" layer="97">Out X2</text>
+<text x="142.24" y="104.14" size="1.778" layer="97">Out X1</text>
+<text x="142.24" y="78.74" size="1.778" layer="97">Out Y1</text>
+<text x="142.24" y="81.28" size="1.778" layer="97">LED</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="124.46" y="152.4" smashed="yes">
@@ -3273,7 +3299,10 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <attribute name="NAME" x="153.416" y="145.288" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="155.575" y="145.288" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U1" gate="G$1" x="195.58" y="30.48" smashed="yes"/>
+<instance part="IC2" gate="G$1" x="195.58" y="30.48" smashed="yes">
+<attribute name="NAME" x="198.12" y="40.894" size="1.778" layer="95"/>
+<attribute name="VALUE" x="195.58" y="25.4" size="1.778" layer="96"/>
+</instance>
 <instance part="R17" gate="G$1" x="218.44" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="222.25" y="24.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="222.25" y="22.098" size="1.778" layer="96"/>
@@ -3461,7 +3490,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="218.44" y1="15.24" x2="218.44" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VSS"/>
+<pinref part="IC2" gate="G$1" pin="VSS"/>
 <wire x1="185.42" y1="35.56" x2="180.34" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="35.56" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="180.34" y1="15.24" x2="218.44" y2="15.24" width="0.1524" layer="91"/>
@@ -3628,7 +3657,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </net>
 <net name="CANH" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CANH"/>
+<pinref part="IC2" gate="G$1" pin="CANH"/>
 <wire x1="215.9" y1="35.56" x2="231.14" y2="35.56" width="0.1524" layer="91"/>
 <label x="220.98" y="35.56" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -3636,7 +3665,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </net>
 <net name="CANL" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="CANL"/>
+<pinref part="IC2" gate="G$1" pin="CANL"/>
 <wire x1="215.9" y1="33.02" x2="231.14" y2="33.02" width="0.1524" layer="91"/>
 <label x="220.98" y="33.02" size="1.778" layer="95"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
@@ -3644,7 +3673,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RS"/>
+<pinref part="IC2" gate="G$1" pin="RS"/>
 <wire x1="215.9" y1="38.1" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="218.44" y1="38.1" x2="218.44" y2="27.94" width="0.1524" layer="91"/>
@@ -3777,7 +3806,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <junction x="124.46" y="160.02"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="VDD"/>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
 <wire x1="185.42" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="33.02" x2="182.88" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
@@ -3822,7 +3851,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <label x="129.54" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="TXD"/>
+<pinref part="IC2" gate="G$1" pin="TXD"/>
 <wire x1="162.56" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
 <label x="165.1" y="38.1" size="1.778" layer="95"/>
 </segment>
@@ -3834,7 +3863,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <label x="129.54" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="RXD"/>
+<pinref part="IC2" gate="G$1" pin="RXD"/>
 <wire x1="185.42" y1="30.48" x2="175.26" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="30.48" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
@@ -3889,7 +3918,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <net name="D7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD7"/>
-<wire x1="127" y1="66.04" x2="142.24" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="127" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
 <label x="129.54" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -3936,7 +3965,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <net name="D13" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD1(CLK0)"/>
-<wire x1="127" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="127" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
 <label x="129.54" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -3956,7 +3985,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <net name="D8" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3"/>
-<wire x1="127" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="127" y1="53.34" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
 <label x="129.54" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -3997,31 +4026,41 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,27.94,101.6,3V3,,,,,"/>
-<approved hash="106,1,226.06,116.84,AREF,,,,,"/>
-<approved hash="106,1,226.06,71.12,D0_RX,,,,,"/>
-<approved hash="106,1,226.06,73.66,D1_TX,,,,,"/>
-<approved hash="106,1,226.06,76.2,D2,,,,,"/>
-<approved hash="106,1,226.06,78.74,D3,,,,,"/>
-<approved hash="106,1,226.06,81.28,D4,,,,,"/>
-<approved hash="106,1,226.06,83.82,D5,,,,,"/>
-<approved hash="106,1,226.06,86.36,D6,,,,,"/>
-<approved hash="106,1,226.06,88.9,D7,,,,,"/>
-<approved hash="106,1,226.06,101.6,D9,,,,,"/>
-<approved hash="106,1,226.06,104.14,D10,,,,,"/>
-<approved hash="106,1,226.06,106.68,D11_MOSI,,,,,"/>
-<approved hash="106,1,226.06,109.22,D12_MISO,,,,,"/>
-<approved hash="106,1,226.06,111.76,D13_SCK,,,,,"/>
-<approved hash="106,1,27.94,109.22,NC,,,,,"/>
-<approved hash="106,1,226.06,121.92,SCL,,,,,"/>
-<approved hash="106,1,226.06,119.38,SDA,,,,,"/>
-<approved hash="106,1,27.94,91.44,VIN,,,,,"/>
-<approved hash="113,1,192.7,111.411,X3,,,,,"/>
-<approved hash="113,1,165.777,110.2,JP1,,,,,"/>
-<approved hash="113,1,165.777,92.4204,JP2,,,,,"/>
-<approved hash="113,1,165.777,74.6404,JP3,,,,,"/>
-<approved hash="113,1,165.777,54.3204,JP4,,,,,"/>
+<approved hash="106,1,231.14,38.1,12V,,,,,"/>
+<approved hash="106,1,127,71.12,A0,,,,,"/>
+<approved hash="106,1,127,68.58,A1,,,,,"/>
+<approved hash="106,1,127,55.88,A2,,,,,"/>
+<approved hash="106,1,127,96.52,A3,,,,,"/>
+<approved hash="106,1,127,93.98,A4,,,,,"/>
+<approved hash="106,1,127,91.44,A5,,,,,"/>
+<approved hash="106,1,127,48.26,A6,,,,,"/>
+<approved hash="106,1,127,45.72,A7,,,,,"/>
+<approved hash="106,1,127,50.8,D9,,,,,"/>
+<approved hash="106,1,127,88.9,D10,,,,,"/>
+<approved hash="106,1,127,83.82,D11,,,,,"/>
+<approved hash="106,1,127,106.68,D12,,,,,"/>
+<approved hash="106,1,22.86,157.48,FS_RESET,,,,,"/>
+<approved hash="106,1,22.86,149.86,FS_SWD_CLK,,,,,"/>
+<approved hash="106,1,22.86,152.4,FS_SWD_DIO,,,,,"/>
+<approved hash="113,1,19.6427,150.935,JP3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
