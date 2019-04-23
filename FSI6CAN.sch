@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.3.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3213,9 +3213,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <text x="10.16" y="127" size="2.54" layer="94" ratio="12">ATmega32m1 MCU</text>
 <text x="7.62" y="20.32" size="3.048" layer="94">Flysky FS-i6 CAN Interface</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V1.0 (2018-08-20)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1.1 (2019-03-10)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: FSI6CAN</text>
-<text x="7.366" y="9.398" size="1.778" layer="94">(C)2018 SuperHouse Automation: www.superhouse.tv</text>
+<text x="7.366" y="9.398" size="1.778" layer="94">(C)2018-2019 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
 <text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/fsi6can</text>
 <text x="109.22" y="175.26" size="2.54" layer="94" ratio="12">Power / Status</text>
@@ -3223,29 +3223,29 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="35.56" y1="12.7" x2="66.04" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<wire x1="5.08" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="97" style="longdash"/>
-<wire x1="50.8" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="5.08" y1="134.62" x2="43.18" y2="134.62" width="0.1524" layer="97" style="longdash"/>
+<wire x1="43.18" y1="134.62" x2="104.14" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="104.14" y1="134.62" x2="162.56" y2="134.62" width="0.1524" layer="97" style="longdash"/>
 <wire x1="104.14" y1="134.62" x2="104.14" y2="180.34" width="0.1524" layer="97" style="longdash"/>
 <text x="13.97" y="88.9" size="1.778" layer="94" rot="R90">FTDI Header</text>
-<text x="139.7" y="104.14" size="1.778" layer="97">~</text>
-<text x="139.7" y="78.74" size="1.778" layer="97">~</text>
-<text x="139.7" y="76.2" size="1.778" layer="97">~</text>
+<text x="151.13" y="102.87" size="1.778" layer="97">~</text>
+<text x="151.13" y="77.47" size="1.778" layer="97">~</text>
+<text x="151.13" y="74.93" size="1.778" layer="97">~</text>
 <text x="10.16" y="175.26" size="2.54" layer="94" ratio="12">Flysky Header</text>
 <text x="167.64" y="175.26" size="2.54" layer="94" ratio="12">Analog Outputs</text>
 <text x="162.56" y="60.96" size="2.54" layer="94" ratio="12">CAN Transceiver</text>
-<wire x1="50.8" y1="134.62" x2="50.8" y2="180.34" width="0.1524" layer="97" style="longdash"/>
-<text x="55.88" y="175.26" size="2.54" layer="94" ratio="12">ICSP Header</text>
+<wire x1="43.18" y1="134.62" x2="43.18" y2="180.34" width="0.1524" layer="97" style="longdash"/>
+<text x="50.8" y="175.26" size="2.54" layer="94" ratio="12">ICSP Header</text>
 <wire x1="157.48" y1="68.58" x2="162.56" y2="68.58" width="0.1524" layer="97" style="longdash"/>
 <wire x1="162.56" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="97" style="longdash"/>
 <wire x1="157.48" y1="68.58" x2="157.48" y2="5.08" width="0.1524" layer="97" style="longdash"/>
 <wire x1="162.56" y1="134.62" x2="162.56" y2="180.34" width="0.1524" layer="97" style="longdash"/>
 <wire x1="162.56" y1="68.58" x2="162.56" y2="134.62" width="0.1524" layer="97" style="longdash"/>
-<text x="142.24" y="53.34" size="1.778" layer="97">Out Y2</text>
-<text x="142.24" y="66.04" size="1.778" layer="97">Out X2</text>
-<text x="142.24" y="104.14" size="1.778" layer="97">Out X1</text>
-<text x="142.24" y="78.74" size="1.778" layer="97">Out Y1</text>
-<text x="142.24" y="81.28" size="1.778" layer="97">LED</text>
+<text x="137.16" y="52.07" size="1.778" layer="97">Out Y2</text>
+<text x="137.16" y="64.77" size="1.778" layer="97">Out X2</text>
+<text x="137.16" y="102.87" size="1.778" layer="97">Out X1</text>
+<text x="137.16" y="49.53" size="1.778" layer="97">Out Y1</text>
+<text x="137.16" y="80.01" size="1.778" layer="97">LED</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="124.46" y="152.4" smashed="yes">
@@ -3262,12 +3262,12 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <instance part="GND11" gate="1" x="111.76" y="142.24" smashed="yes">
 <attribute name="VALUE" x="109.22" y="139.7" size="1.778" layer="96"/>
 </instance>
-<instance part="ICSP" gate="A" x="76.2" y="154.94" smashed="yes">
-<attribute name="NAME" x="69.85" y="160.655" size="1.778" layer="95"/>
-<attribute name="VALUE" x="69.85" y="147.32" size="1.778" layer="96"/>
+<instance part="ICSP" gate="A" x="71.12" y="154.94" smashed="yes">
+<attribute name="NAME" x="64.77" y="160.655" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="147.32" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="96.52" y="149.86" smashed="yes">
-<attribute name="VALUE" x="93.98" y="147.32" size="1.778" layer="96"/>
+<instance part="GND9" gate="1" x="91.44" y="149.86" smashed="yes">
+<attribute name="VALUE" x="88.9" y="147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="S21" gate="1" x="50.8" y="91.44" smashed="yes">
 <attribute name="NAME" x="46.355" y="100.965" size="1.778" layer="95"/>
@@ -3358,15 +3358,15 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <instance part="GND4" gate="1" x="198.12" y="83.82" smashed="yes">
 <attribute name="VALUE" x="195.58" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="JP3" gate="G$1" x="15.24" y="152.4" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="12.7" y="162.56" size="1.778" layer="96" rot="MR180"/>
-<attribute name="NAME" x="12.7" y="144.018" size="1.778" layer="95" rot="MR180"/>
+<instance part="JP3" gate="G$1" x="10.16" y="152.4" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="7.62" y="162.56" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="7.62" y="144.018" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="P+1" gate="G$1" x="25.4" y="165.1" smashed="yes">
-<attribute name="VALUE" x="24.384" y="168.656" size="1.778" layer="96"/>
+<instance part="P+1" gate="G$1" x="20.32" y="165.1" smashed="yes">
+<attribute name="VALUE" x="19.304" y="168.656" size="1.778" layer="96"/>
 </instance>
-<instance part="GND10" gate="1" x="27.94" y="142.24" smashed="yes">
-<attribute name="VALUE" x="25.4" y="139.7" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="22.86" y="142.24" smashed="yes">
+<attribute name="VALUE" x="20.32" y="139.7" size="1.778" layer="96"/>
 </instance>
 <instance part="JP2" gate="G$1" x="223.52" y="160.02" smashed="yes" rot="R180">
 <attribute name="VALUE" x="226.06" y="165.1" size="1.778" layer="96" rot="R180"/>
@@ -3403,8 +3403,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <instance part="P+5" gate="G$1" x="182.88" y="45.72" smashed="yes">
 <attribute name="VALUE" x="181.864" y="49.276" size="1.778" layer="96"/>
 </instance>
-<instance part="P+6" gate="G$1" x="96.52" y="157.48" smashed="yes">
-<attribute name="VALUE" x="95.504" y="161.036" size="1.778" layer="96"/>
+<instance part="P+6" gate="G$1" x="91.44" y="157.48" smashed="yes">
+<attribute name="VALUE" x="90.424" y="161.036" size="1.778" layer="96"/>
 </instance>
 <instance part="P+7" gate="G$1" x="40.64" y="111.76" smashed="yes">
 <attribute name="VALUE" x="39.624" y="115.316" size="1.778" layer="96"/>
@@ -3460,8 +3460,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <junction x="124.46" y="147.32"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="152.4" x2="96.52" y2="152.4" width="0.1524" layer="91"/>
-<label x="86.36" y="152.4" size="1.778" layer="95"/>
+<wire x1="76.2" y1="152.4" x2="91.44" y2="152.4" width="0.1524" layer="91"/>
+<label x="81.28" y="152.4" size="1.778" layer="95"/>
 <pinref part="ICSP" gate="A" pin="6"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
@@ -3524,9 +3524,9 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="154.94" x2="27.94" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="154.94" x2="22.86" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="27.94" y1="154.94" x2="27.94" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="154.94" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
@@ -3559,8 +3559,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </net>
 <net name="RESET" class="0">
 <segment>
-<wire x1="73.66" y1="152.4" x2="55.88" y2="152.4" width="0.1524" layer="91"/>
-<label x="55.88" y="152.4" size="1.778" layer="95"/>
+<wire x1="68.58" y1="152.4" x2="58.42" y2="152.4" width="0.1524" layer="91"/>
+<label x="58.42" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="ICSP" gate="A" pin="5"/>
 </segment>
 <segment>
@@ -3586,8 +3586,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="AREF"/>
-<wire x1="81.28" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<label x="73.66" y="99.06" size="1.778" layer="95"/>
+<wire x1="81.28" y1="99.06" x2="78.74" y2="99.06" width="0.1524" layer="91"/>
+<label x="78.74" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -3614,38 +3614,28 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="55.88" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
-<label x="55.88" y="154.94" size="1.778" layer="95"/>
+<wire x1="58.42" y1="154.94" x2="68.58" y2="154.94" width="0.1524" layer="91"/>
+<label x="58.42" y="154.94" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="ICSP" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB7(SCK)"/>
-<wire x1="127" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
-<label x="129.54" y="43.18" size="1.778" layer="95"/>
+<wire x1="127" y1="43.18" x2="129.54" y2="43.18" width="0.1524" layer="91"/>
+<label x="129.54" y="43.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D6_MOSI" class="0">
 <segment>
-<wire x1="96.52" y1="154.94" x2="81.28" y2="154.94" width="0.1524" layer="91"/>
-<label x="86.36" y="154.94" size="1.778" layer="95"/>
-<pinref part="ICSP" gate="A" pin="4"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="PB1(MOSI)"/>
-<wire x1="127" y1="58.42" x2="149.86" y2="58.42" width="0.1524" layer="91"/>
-<label x="129.54" y="58.42" size="1.778" layer="95"/>
+<wire x1="127" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
+<label x="129.54" y="58.42" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D5_MISO" class="0">
 <segment>
-<wire x1="55.88" y1="157.48" x2="73.66" y2="157.48" width="0.1524" layer="91"/>
-<label x="55.88" y="157.48" size="1.778" layer="95"/>
-<pinref part="ICSP" gate="A" pin="1"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="G$1" pin="PB0(MISO)"/>
-<wire x1="127" y1="60.96" x2="149.86" y2="60.96" width="0.1524" layer="91"/>
-<label x="129.54" y="60.96" size="1.778" layer="95"/>
+<wire x1="127" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
+<label x="129.54" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3739,30 +3729,30 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <net name="FS_RESET" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="157.48" x2="40.64" y2="157.48" width="0.1524" layer="91"/>
-<label x="30.48" y="157.48" size="1.778" layer="95"/>
+<wire x1="17.78" y1="157.48" x2="25.4" y2="157.48" width="0.1524" layer="91"/>
+<label x="25.4" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FS_SWD_DIO" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="3"/>
-<wire x1="22.86" y1="152.4" x2="40.64" y2="152.4" width="0.1524" layer="91"/>
-<label x="30.48" y="152.4" size="1.778" layer="95"/>
+<wire x1="17.78" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
+<label x="25.4" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="FS_SWD_CLK" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="4"/>
-<wire x1="22.86" y1="149.86" x2="40.64" y2="149.86" width="0.1524" layer="91"/>
-<label x="30.48" y="149.86" size="1.778" layer="95"/>
+<wire x1="17.78" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
+<label x="25.4" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="JP3" gate="G$1" pin="5"/>
-<wire x1="22.86" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="147.32" x2="20.32" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="G$1" pin="3.3V"/>
-<wire x1="25.4" y1="147.32" x2="25.4" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="147.32" x2="20.32" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="71.12" y1="104.14" x2="73.66" y2="104.14" width="0.1524" layer="91"/>
@@ -3778,8 +3768,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <junction x="73.66" y="106.68"/>
 </segment>
 <segment>
-<wire x1="81.28" y1="157.48" x2="96.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="86.36" y="157.48" size="1.778" layer="95"/>
+<wire x1="76.2" y1="157.48" x2="91.44" y2="157.48" width="0.1524" layer="91"/>
+<label x="81.28" y="157.48" size="1.778" layer="95"/>
 <pinref part="ICSP" gate="A" pin="2"/>
 <pinref part="P+6" gate="G$1" pin="3.3V"/>
 </segment>
@@ -3812,7 +3802,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
-<net name="D1_TX" class="0">
+<net name="D1_TX_MOSIA" class="0">
 <segment>
 <wire x1="25.4" y1="101.6" x2="38.1" y2="101.6" width="0.1524" layer="91"/>
 <label x="27.94" y="101.6" size="1.778" layer="95"/>
@@ -3820,8 +3810,13 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD3(TXD/TXLIN/MOSI_A)"/>
-<wire x1="127" y1="76.2" x2="149.86" y2="76.2" width="0.1524" layer="91"/>
-<label x="129.54" y="76.2" size="1.778" layer="95"/>
+<wire x1="127" y1="76.2" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
+<label x="129.54" y="76.2" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="154.94" x2="76.2" y2="154.94" width="0.1524" layer="91"/>
+<label x="86.36" y="154.94" size="1.27" layer="95" xref="yes"/>
+<pinref part="ICSP" gate="A" pin="4"/>
 </segment>
 </net>
 <net name="D0_RX" class="0">
@@ -3832,8 +3827,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD4(RXD/RXLIN/SCK_A)"/>
-<wire x1="127" y1="73.66" x2="149.86" y2="73.66" width="0.1524" layer="91"/>
-<label x="129.54" y="73.66" size="1.778" layer="95"/>
+<wire x1="127" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<label x="129.54" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RTS" class="0">
@@ -3847,172 +3842,179 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <net name="D3_TXCAN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC2(TXCAN)"/>
-<wire x1="127" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
-<label x="129.54" y="101.6" size="1.778" layer="95"/>
+<wire x1="127" y1="101.6" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
+<label x="129.54" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="TXD"/>
-<wire x1="162.56" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
-<label x="165.1" y="38.1" size="1.778" layer="95"/>
+<wire x1="172.72" y1="35.56" x2="177.8" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="35.56" x2="177.8" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="38.1" x2="185.42" y2="38.1" width="0.1524" layer="91"/>
+<label x="172.72" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D4_RXCAN" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC3(RXCAN)"/>
-<wire x1="127" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
-<label x="129.54" y="99.06" size="1.778" layer="95"/>
+<wire x1="127" y1="99.06" x2="129.54" y2="99.06" width="0.1524" layer="91"/>
+<label x="129.54" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="RXD"/>
-<wire x1="185.42" y1="30.48" x2="175.26" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="30.48" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="175.26" y1="35.56" x2="162.56" y2="35.56" width="0.1524" layer="91"/>
-<label x="165.1" y="35.56" size="1.778" layer="95"/>
+<wire x1="185.42" y1="30.48" x2="177.8" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="30.48" x2="177.8" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="33.02" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
+<label x="172.72" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="D14" class="0">
+<net name="D14_MISOA" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD2(MISO_A)"/>
-<wire x1="127" y1="78.74" x2="149.86" y2="78.74" width="0.1524" layer="91"/>
-<label x="129.54" y="78.74" size="1.778" layer="95"/>
+<wire x1="127" y1="78.74" x2="129.54" y2="78.74" width="0.1524" layer="91"/>
+<label x="129.54" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="139.7" x2="172.72" y2="139.7" width="0.1524" layer="91"/>
-<label x="175.26" y="139.7" size="1.778" layer="95"/>
+<wire x1="58.42" y1="157.48" x2="68.58" y2="157.48" width="0.1524" layer="91"/>
+<label x="58.42" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="ICSP" gate="A" pin="1"/>
 </segment>
 </net>
 <net name="D2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC1(SS_A)"/>
-<wire x1="127" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
-<label x="129.54" y="104.14" size="1.778" layer="95"/>
+<wire x1="127" y1="104.14" x2="129.54" y2="104.14" width="0.1524" layer="91"/>
+<label x="129.54" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="160.02" x2="172.72" y2="160.02" width="0.1524" layer="91"/>
-<label x="175.26" y="160.02" size="1.778" layer="95"/>
+<wire x1="185.42" y1="160.02" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
+<label x="180.34" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD5"/>
-<wire x1="127" y1="71.12" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
-<label x="129.54" y="71.12" size="1.778" layer="95"/>
+<wire x1="127" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<label x="129.54" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD6"/>
-<wire x1="127" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
-<label x="129.54" y="68.58" size="1.778" layer="95"/>
+<wire x1="127" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="129.54" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB2"/>
-<wire x1="127" y1="55.88" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
-<label x="129.54" y="55.88" size="1.778" layer="95"/>
+<wire x1="127" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
+<label x="129.54" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD7"/>
-<wire x1="127" y1="66.04" x2="149.86" y2="66.04" width="0.1524" layer="91"/>
-<label x="129.54" y="66.04" size="1.778" layer="95"/>
+<wire x1="127" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
+<label x="129.54" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="119.38" x2="172.72" y2="119.38" width="0.1524" layer="91"/>
-<label x="175.26" y="119.38" size="1.778" layer="95"/>
+<wire x1="185.42" y1="119.38" x2="180.34" y2="119.38" width="0.1524" layer="91"/>
+<label x="180.34" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D12" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC0"/>
-<wire x1="127" y1="106.68" x2="142.24" y2="106.68" width="0.1524" layer="91"/>
-<label x="129.54" y="106.68" size="1.778" layer="95"/>
+<wire x1="127" y1="106.68" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
+<label x="129.54" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC4"/>
-<wire x1="127" y1="96.52" x2="142.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="129.54" y="96.52" size="1.778" layer="95"/>
+<wire x1="127" y1="96.52" x2="129.54" y2="96.52" width="0.1524" layer="91"/>
+<label x="129.54" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC5"/>
-<wire x1="127" y1="93.98" x2="142.24" y2="93.98" width="0.1524" layer="91"/>
-<label x="129.54" y="93.98" size="1.778" layer="95"/>
+<wire x1="127" y1="93.98" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<label x="129.54" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC6"/>
-<wire x1="127" y1="91.44" x2="142.24" y2="91.44" width="0.1524" layer="91"/>
-<label x="129.54" y="91.44" size="1.778" layer="95"/>
+<wire x1="127" y1="91.44" x2="129.54" y2="91.44" width="0.1524" layer="91"/>
+<label x="129.54" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PC7"/>
-<wire x1="127" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
-<label x="129.54" y="88.9" size="1.778" layer="95"/>
+<wire x1="127" y1="88.9" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
+<label x="129.54" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D13" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD1(CLK0)"/>
-<wire x1="127" y1="81.28" x2="149.86" y2="81.28" width="0.1524" layer="91"/>
-<label x="129.54" y="81.28" size="1.778" layer="95"/>
+<wire x1="127" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<label x="129.54" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="1K" gate="G$1" pin="2"/>
 <wire x1="27.94" y1="63.5" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="68.58" x2="12.7" y2="68.58" width="0.1524" layer="91"/>
-<label x="15.24" y="68.58" size="1.778" layer="95"/>
+<wire x1="27.94" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
+<label x="22.86" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D11" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PD0"/>
-<wire x1="127" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
-<label x="129.54" y="83.82" size="1.778" layer="95"/>
+<wire x1="127" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<label x="129.54" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D8" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB3"/>
-<wire x1="127" y1="53.34" x2="149.86" y2="53.34" width="0.1524" layer="91"/>
-<label x="129.54" y="53.34" size="1.778" layer="95"/>
+<wire x1="127" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
+<label x="129.54" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="185.42" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
-<label x="175.26" y="99.06" size="1.778" layer="95"/>
+<wire x1="185.42" y1="99.06" x2="180.34" y2="99.06" width="0.1524" layer="91"/>
+<label x="180.34" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB4"/>
-<wire x1="127" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<label x="129.54" y="50.8" size="1.778" layer="95"/>
+<wire x1="127" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
+<label x="129.54" y="50.8" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="139.7" x2="180.34" y2="139.7" width="0.1524" layer="91"/>
+<label x="180.34" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB5"/>
-<wire x1="127" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
-<label x="129.54" y="48.26" size="1.778" layer="95"/>
+<wire x1="127" y1="48.26" x2="129.54" y2="48.26" width="0.1524" layer="91"/>
+<label x="129.54" y="48.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB6"/>
-<wire x1="127" y1="45.72" x2="142.24" y2="45.72" width="0.1524" layer="91"/>
-<label x="129.54" y="45.72" size="1.778" layer="95"/>
+<wire x1="127" y1="45.72" x2="129.54" y2="45.72" width="0.1524" layer="91"/>
+<label x="129.54" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
