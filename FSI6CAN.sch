@@ -3268,7 +3268,7 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
 <part name="R8" library="freetronics-jon" deviceset="RESISTOR" device="0603" value="4K7"/>
 <part name="LED1" library="freetronics-jon" deviceset="LED" device="0603" value="BLUE"/>
-<part name="IC2" library="freetronics-original" deviceset="MCP2551" device=""/>
+<part name="IC2" library="freetronics-original" deviceset="MCP2551" device="" value="TCAN332DR"/>
 <part name="R17" library="freetronics-master-v1.1" deviceset="RESISTOR" device="0603" value="10K"/>
 <part name="JP1" library="freetronics-jon" deviceset="M04" device="PTH" value="CAN"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
@@ -3349,6 +3349,8 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 <text x="137.16" y="102.87" size="1.778" layer="97">Out X1</text>
 <text x="137.16" y="49.53" size="1.778" layer="97">Out Y1</text>
 <text x="137.16" y="80.01" size="1.778" layer="97">LED</text>
+<text x="154.94" y="5.08" size="1.778" layer="97">Note: TCAN332DR is used instead of MCP2551
+because it can operate at 3.3V</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="124.46" y="152.4" smashed="yes">
@@ -4181,6 +4183,10 @@ We want bragging rights that we helped (in a very small part) to create your 8th
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
