@@ -3616,7 +3616,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <text x="10.16" y="127" size="2.54" layer="94" ratio="12">ATmega32m1 MCU</text>
 <text x="7.62" y="20.32" size="3.048" layer="94">Flysky FS-i6 CAN Interface</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V2.0 (2019-04-30)</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V2.1 (2019-05-10)</text>
 <text x="7.62" y="14.478" size="1.778" layer="94">SKU: FSI6CAN</text>
 <text x="7.366" y="9.398" size="1.778" layer="94">(C)2018-2019 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
@@ -3648,7 +3648,7 @@ Handy to use on those pins that you want to mark as NC on a schematic.</descript
 <text x="149.86" y="4.318" size="1.778" layer="97">Note: TCAN332DR is used instead of MCP2551
 because it can operate at 3.3V</text>
 <text x="134.62" y="66.04" size="1.778" layer="97" align="center-left">CAN INT</text>
-<text x="134.62" y="45.72" size="1.778" layer="97" align="center-left">~ Out X2</text>
+<text x="134.62" y="45.72" size="1.778" layer="97" align="center-left">~ Out X1</text>
 <text x="142.24" y="43.18" size="1.778" layer="97" align="center-left">~</text>
 <text x="142.24" y="40.64" size="1.778" layer="97" align="center-left">~</text>
 </plain>
