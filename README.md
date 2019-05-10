@@ -1,6 +1,6 @@
 Flysky FS-i6 CAN Interface
 ==========================
-Copyright 2018 SuperHouse Automation Pty Ltd <www.superhouse.tv>  
+Copyright 2018-2019 SuperHouse Automation Pty Ltd <www.superhouse.tv>  
 Designed by Jonathan Oxer
 
 Mounts inside a Flysky FS-i6 remote control transmitter to provide a
