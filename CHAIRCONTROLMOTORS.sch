@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3694,7 +3694,7 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <part name="GND32" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="JP5" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02" device="-PIN" package3d_urn="urn:adsk.eagle:package:11816162/2" value="CAN TERM"/>
 <part name="R34" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="120R"/>
-<part name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X3" device="-PIN" package3d_urn="urn:adsk.eagle:package:12408519/2"/>
+<part name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X3" device="-PIN" package3d_urn="urn:adsk.eagle:package:12408519/2" value="RoboClaw"/>
 <part name="GND3" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="U$1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
 <part name="Q1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="MOSFET-NCHANNEL" device="-DPAK" package3d_urn="urn:adsk.eagle:package:11815997/3" value="NTD5867NLT4G"/>
@@ -3727,7 +3727,7 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="35.56" y1="12.7" x2="66.04" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<text x="137.16" y="38.1" size="1.778" layer="97">To Do:
+<text x="137.16" y="30.48" size="1.778" layer="97">To Do:
 * Brake solenoid control with MOSFETs
 * Headers for interface with Roboclaw. D10/D11?
 * Circuit to detect brake switch position
@@ -3757,6 +3757,21 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <text x="111.76" y="7.62" size="2.54" layer="97">5V power is supplied by the RoboClaw via the comms header.
 USB VIN and ICSP VIN are linked.
 Fabricate with 2oz copper to provide adequate current capacity for high power tracks.</text>
+<text x="195.58" y="30.48" size="1.778" layer="97">D0:
+D1:
+D2: SPI INT
+D3:
+D4:
+D5:
+D6:
+D7:
+D8: RoboClaw S2
+D9: RoboClaw S1
+D10: CAN SPI CS
+D11: 
+D13: LED</text>
+<text x="121.92" y="50.8" size="1.778" layer="97">S1</text>
+<text x="73.66" y="50.8" size="1.778" layer="97">S2</text>
 </plain>
 <instances>
 <instance part="J11" gate="G$1" x="22.86" y="127" smashed="yes" rot="MR0">
@@ -3879,7 +3894,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </instance>
 <instance part="IC7" gate="G$1" x="121.92" y="114.3" smashed="yes">
 <attribute name="NAME" x="119.38" y="78.74" size="1.778" layer="95"/>
-<attribute name="VALUE" x="116.84" y="160.02" size="1.778" layer="96"/>
+<attribute name="VALUE" x="111.76" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="38.1" y="132.08" smashed="yes">
 <attribute name="NAME" x="38.1" y="132.5626" size="1.778" layer="95"/>
@@ -3970,7 +3985,6 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <junction x="91.44" y="91.44"/>
 <junction x="91.44" y="104.14"/>
 <junction x="91.44" y="96.52"/>
-<label x="93.98" y="96.52" size="1.778" layer="95"/>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="XTL2" gate="G$1" pin="GND2"/>
 <pinref part="XTL2" gate="G$1" pin="GND"/>
@@ -4050,58 +4064,58 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <label x="208.28" y="101.6" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="99.06" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
-<label x="88.9" y="116.84" size="1.778" layer="95"/>
+<wire x1="99.06" y1="116.84" x2="96.52" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="AREF"/>
+<label x="96.52" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="A0" class="0">
 <segment>
-<wire x1="147.32" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
-<label x="149.86" y="144.78" size="1.778" layer="95"/>
+<wire x1="147.32" y1="144.78" x2="149.86" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF7(ADC7(TDI)"/>
+<label x="149.86" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A1" class="0">
 <segment>
-<wire x1="147.32" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
-<label x="149.86" y="147.32" size="1.778" layer="95"/>
+<wire x1="147.32" y1="147.32" x2="149.86" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF6(ADC6/TDO)"/>
+<label x="149.86" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A2" class="0">
 <segment>
-<wire x1="147.32" y1="149.86" x2="160.02" y2="149.86" width="0.1524" layer="91"/>
-<label x="149.86" y="149.86" size="1.778" layer="95"/>
+<wire x1="147.32" y1="149.86" x2="149.86" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF5(ADC5/TMS)"/>
+<label x="149.86" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A3" class="0">
 <segment>
-<wire x1="147.32" y1="152.4" x2="160.02" y2="152.4" width="0.1524" layer="91"/>
-<label x="149.86" y="152.4" size="1.778" layer="95"/>
+<wire x1="147.32" y1="152.4" x2="149.86" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF4(ADC4/TCK)"/>
+<label x="149.86" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A4" class="0">
 <segment>
-<wire x1="147.32" y1="154.94" x2="160.02" y2="154.94" width="0.1524" layer="91"/>
-<label x="149.86" y="154.94" size="1.778" layer="95"/>
+<wire x1="147.32" y1="154.94" x2="149.86" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF1(ADC1)"/>
+<label x="149.86" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="A5" class="0">
 <segment>
-<wire x1="147.32" y1="157.48" x2="160.02" y2="157.48" width="0.1524" layer="91"/>
-<label x="149.86" y="157.48" size="1.778" layer="95"/>
+<wire x1="147.32" y1="157.48" x2="149.86" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PF0(ADC0)"/>
+<label x="149.86" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
-<wire x1="147.32" y1="132.08" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
-<label x="149.86" y="132.08" size="1.778" layer="95"/>
+<wire x1="147.32" y1="132.08" x2="149.86" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PC6(OC3A/!OC4A!)"/>
+<label x="149.86" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -4211,9 +4225,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="D7_AIN0" class="0">
 <segment>
-<wire x1="147.32" y1="137.16" x2="160.02" y2="137.16" width="0.1524" layer="91"/>
-<label x="149.86" y="137.16" size="1.778" layer="95"/>
+<wire x1="147.32" y1="137.16" x2="149.86" y2="137.16" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PE6"/>
+<label x="149.86" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RD-" class="0">
@@ -4258,16 +4272,16 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="D11" class="0">
 <segment>
-<wire x1="147.32" y1="124.46" x2="160.02" y2="124.46" width="0.1524" layer="91"/>
-<label x="149.86" y="124.46" size="1.778" layer="95"/>
+<wire x1="147.32" y1="124.46" x2="149.86" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB7(OC0A/OC1C/RTS)"/>
+<label x="149.86" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D13" class="0">
 <segment>
-<wire x1="147.32" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-<label x="149.86" y="129.54" size="1.778" layer="95"/>
+<wire x1="147.32" y1="129.54" x2="149.86" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PC7(ICP3/CLK0/OC4A)"/>
+<label x="149.86" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -4277,9 +4291,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="RXLED_SS" class="0">
 <segment>
-<wire x1="147.32" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
-<label x="149.86" y="106.68" size="1.778" layer="95"/>
+<wire x1="147.32" y1="106.68" x2="149.86" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB0(SS)"/>
+<label x="149.86" y="106.68" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="208.28" y1="137.16" x2="198.12" y2="137.16" width="0.1524" layer="91"/>
@@ -4289,9 +4303,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="TX_LED" class="0">
 <segment>
-<wire x1="147.32" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
-<label x="149.86" y="96.52" size="1.778" layer="95"/>
+<wire x1="147.32" y1="96.52" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD5(XCK/CTS)"/>
+<label x="149.86" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="200.66" y1="147.32" x2="198.12" y2="147.32" width="0.1524" layer="91"/>
@@ -4301,9 +4315,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="SCK" class="0">
 <segment>
-<wire x1="147.32" y1="109.22" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
-<label x="149.86" y="109.22" size="1.778" layer="95"/>
+<wire x1="147.32" y1="109.22" x2="149.86" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB1(SCK)"/>
+<label x="149.86" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
@@ -4313,9 +4327,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="MOSI" class="0">
 <segment>
-<wire x1="147.32" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
-<label x="149.86" y="111.76" size="1.778" layer="95"/>
+<wire x1="147.32" y1="111.76" x2="149.86" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB2(PDI/MOSI)"/>
+<label x="149.86" y="111.76" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="45.72" y1="48.26" x2="40.64" y2="48.26" width="0.1524" layer="91"/>
@@ -4325,9 +4339,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="MISO" class="0">
 <segment>
-<wire x1="147.32" y1="114.3" x2="160.02" y2="114.3" width="0.1524" layer="91"/>
-<label x="149.86" y="114.3" size="1.778" layer="95"/>
+<wire x1="147.32" y1="114.3" x2="149.86" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB3(PDO/MISO)"/>
+<label x="149.86" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <wire x1="27.94" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
@@ -4337,9 +4351,9 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="HWB" class="0">
 <segment>
-<wire x1="147.32" y1="139.7" x2="160.02" y2="139.7" width="0.1524" layer="91"/>
-<label x="149.86" y="139.7" size="1.778" layer="95"/>
+<wire x1="147.32" y1="139.7" x2="149.86" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PE2(HWB)"/>
+<label x="149.86" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -4365,58 +4379,68 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="D0" class="0">
 <segment>
-<wire x1="147.32" y1="88.9" x2="160.02" y2="88.9" width="0.1524" layer="91"/>
-<label x="149.86" y="88.9" size="1.778" layer="95"/>
+<wire x1="147.32" y1="88.9" x2="149.86" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD2(INT2/RXD1)"/>
+<label x="149.86" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D1" class="0">
 <segment>
-<wire x1="147.32" y1="91.44" x2="160.02" y2="91.44" width="0.1524" layer="91"/>
-<label x="149.86" y="91.44" size="1.778" layer="95"/>
+<wire x1="147.32" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD3(INT3/TXD1)"/>
+<label x="149.86" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D6_A8" class="0">
 <segment>
-<wire x1="147.32" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
-<label x="149.86" y="101.6" size="1.778" layer="95"/>
+<wire x1="147.32" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD7(OC4D/ADC10/T0)"/>
+<label x="149.86" y="101.6" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D12" class="0">
 <segment>
-<wire x1="147.32" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
-<label x="149.86" y="99.06" size="1.778" layer="95"/>
+<wire x1="147.32" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD6(T1/OC4D/ADC9)"/>
+<label x="149.86" y="99.06" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D4_A6" class="0">
 <segment>
-<wire x1="147.32" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
-<label x="149.86" y="93.98" size="1.778" layer="95"/>
+<wire x1="147.32" y1="93.98" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD4(ICP1/ADC8)"/>
+<label x="149.86" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D8_A9" class="0">
 <segment>
-<wire x1="147.32" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<label x="149.86" y="116.84" size="1.778" layer="95"/>
+<wire x1="147.32" y1="116.84" x2="149.86" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB4(ADC11)"/>
+<label x="149.86" y="116.84" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J12" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<label x="86.36" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D9_A10" class="0">
 <segment>
-<wire x1="147.32" y1="119.38" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
-<label x="149.86" y="119.38" size="1.778" layer="95"/>
+<wire x1="147.32" y1="119.38" x2="149.86" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB5(OC1A/!OC4B!/ADC12)"/>
+<label x="149.86" y="119.38" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J12" gate="G$1" pin="2"/>
+<wire x1="106.68" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<label x="111.76" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D10_A11" class="0">
 <segment>
-<wire x1="147.32" y1="121.92" x2="160.02" y2="121.92" width="0.1524" layer="91"/>
-<label x="149.86" y="121.92" size="1.778" layer="95"/>
+<wire x1="147.32" y1="121.92" x2="149.86" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PB6(OC1B/!OC4B!/ADC13)"/>
+<label x="149.86" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="USB+" class="0">
@@ -4438,16 +4462,16 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 </net>
 <net name="D2_SDA" class="0">
 <segment>
-<wire x1="147.32" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
-<label x="149.86" y="86.36" size="1.778" layer="95"/>
+<wire x1="147.32" y1="86.36" x2="149.86" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD1(INT1/SDA)"/>
+<label x="149.86" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D3_SCL" class="0">
 <segment>
-<wire x1="147.32" y1="83.82" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
-<label x="149.86" y="83.82" size="1.778" layer="95"/>
+<wire x1="147.32" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="G$1" pin="PD0(INT0/OC0B/SCL)"/>
+<label x="149.86" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -4463,20 +4487,6 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="LED8" gate="G$1" pin="A"/>
 <pinref part="R33" gate="G$1" pin="2"/>
 <wire x1="215.9" y1="127" x2="210.82" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="J12" gate="G$1" pin="2"/>
-<wire x1="106.68" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="111.76" y="50.8" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="J12" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="86.36" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -4759,6 +4769,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="IC6" gate="G$1" pin="SCK"/>
 <wire x1="83.82" y1="129.54" x2="99.06" y2="129.54" width="0.1524" layer="91"/>
 <label x="86.36" y="129.54" size="1.778" layer="95"/>
+<label x="99.06" y="129.54" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -4766,6 +4777,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="IC6" gate="G$1" pin="SI"/>
 <wire x1="83.82" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
 <label x="86.36" y="134.62" size="1.778" layer="95"/>
+<label x="99.06" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -4773,6 +4785,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="IC6" gate="G$1" pin="SO"/>
 <wire x1="83.82" y1="137.16" x2="99.06" y2="137.16" width="0.1524" layer="91"/>
 <label x="86.36" y="137.16" size="1.778" layer="95"/>
+<label x="99.06" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D10_A11" class="0">
@@ -4780,6 +4793,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="IC6" gate="G$1" pin="!CS"/>
 <wire x1="83.82" y1="139.7" x2="99.06" y2="139.7" width="0.1524" layer="91"/>
 <label x="86.36" y="139.7" size="1.778" layer="95"/>
+<label x="99.06" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="D2_SDA" class="0">
@@ -4787,6 +4801,7 @@ Fabricate with 2oz copper to provide adequate current capacity for high power tr
 <pinref part="IC6" gate="G$1" pin="!INT"/>
 <wire x1="83.82" y1="127" x2="99.06" y2="127" width="0.1524" layer="91"/>
 <label x="86.36" y="127" size="1.778" layer="95"/>
+<label x="99.06" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$33" class="0">
