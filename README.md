@@ -1,19 +1,23 @@
-Flysky FS-i6 CAN Interface
-==========================
-Copyright 2018-2019 SuperHouse Automation Pty Ltd <www.superhouse.tv>  
+Wheelchair Motor Controller
+============================
+Copyright 2019 SuperHouse Automation Pty Ltd <www.superhouse.tv>  
 Designed by Jonathan Oxer
 
-Mounts inside a Flysky FS-i6 remote control transmitter to provide a
-CAN bus interface for external control.
+Controls two wheelchair motors using a RoboClaw motor driver. Outputs
+for a solenoid braking system, and CAN bus interface to communicate
+with other modules on the chair.
 
 Features:
 
- * Takes power from transmitter header.
+ * Takes power from chair battery.
+ * Mounting location for RoboClaw motor driver.
+ * Communicates with RoboClaw using serial commands.
+ * MOSFETs to release mechanical brakes.
  * CAN bus.
 
 More information is available at:
 
-  http://www.superhouse.tv/fsi6can
+  http://www.superhouse.tv/wmc
 
 
 INSTALLATION
