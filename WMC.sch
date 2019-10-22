@@ -3889,8 +3889,8 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <part name="Q2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="MOSFET-NCHANNEL" device="-DPAK" package3d_urn="urn:adsk.eagle:package:11815997/3" value="NTD5867NLT4G"/>
 <part name="R1" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K"/>
 <part name="R3" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K"/>
-<part name="D2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SMA" package3d_urn="urn:adsk.eagle:package:7066222/3"/>
-<part name="D3" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SMA" package3d_urn="urn:adsk.eagle:package:7066222/3"/>
+<part name="D2" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SMA" package3d_urn="urn:adsk.eagle:package:7066222/3" value="SS56"/>
+<part name="D3" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SMA" package3d_urn="urn:adsk.eagle:package:7066222/3" value="SS56"/>
 <part name="GND1" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="GND2" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="U$2" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
@@ -3898,35 +3898,36 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <part name="F2" library="SuperHouse-Fuses" library_urn="urn:adsk.eagle:library:11769263" deviceset="FUSE" device="" package3d_urn="urn:adsk.eagle:package:11815979/3" value="5A"/>
 <part name="R5" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="U$4" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
-<part name="D4" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SOD" package3d_urn="urn:adsk.eagle:package:7066224/2"/>
+<part name="D4" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SOD" package3d_urn="urn:adsk.eagle:package:7066224/2" value="1N4148"/>
 <part name="R6" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K"/>
-<part name="D5" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SOD" package3d_urn="urn:adsk.eagle:package:7066224/2"/>
+<part name="D5" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="DIODE" device="SOD" package3d_urn="urn:adsk.eagle:package:7066224/2" value="1N4148"/>
 <part name="R7" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="10K"/>
 <part name="R8" library="SuperHouse-DiscreteSemi" library_urn="urn:adsk.eagle:library:11768461" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:11768543/2" value="1K"/>
 <part name="U$5" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
 <part name="JP1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M04" device="-PIN" package3d_urn="urn:adsk.eagle:package:11818439/2" value="CAN"/>
 <part name="U$6" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="ICSP" device="-PIN" package3d_urn="urn:adsk.eagle:package:11765966/8"/>
-<part name="LED1" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7066240/3"/>
+<part name="LED1" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7066240/3" value="RED"/>
 <part name="GND6" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
 <part name="GND5" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="GND" device=""/>
-<part name="LED2" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7066240/3"/>
+<part name="LED2" library="SuperHouse-LEDs" library_urn="urn:adsk.eagle:library:11790571" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:7066240/3" value="RED"/>
+<part name="U$7" library="SuperHouse-SupplySymbols" library_urn="urn:adsk.eagle:library:11790503" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
-<text x="7.62" y="20.32" size="3.048" layer="94">Wheelchair Motor Controller CAN Bus Interface</text>
-<text x="38.1" y="14.478" size="1.778" layer="94">V2.1 (2019-05-10)</text>
-<text x="7.62" y="14.478" size="1.778" layer="94">SKU: FSI6CAN</text>
-<text x="7.366" y="9.398" size="1.778" layer="94">(C)2018-2019 SuperHouse Automation: www.superhouse.tv</text>
+<text x="7.62" y="20.32" size="3.048" layer="94">Wheelchair Motor Controller with CAN Bus Interface</text>
+<text x="38.1" y="14.478" size="1.778" layer="94">V1 (2019-10-22)</text>
+<text x="7.62" y="14.478" size="1.778" layer="94">SKU: WMC</text>
+<text x="7.366" y="9.398" size="1.778" layer="94">(C)2019 SuperHouse Automation: www.superhouse.tv</text>
 <text x="7.366" y="6.35" size="1.778" layer="94">Licensed under the TAPR Open Hardware License: www.tapr.org/ohl</text>
-<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/fsi6can</text>
+<text x="68.326" y="14.478" size="1.778" layer="94">www.superhouse.tv/wmc</text>
 <frame x1="5.08" y1="12.7" x2="109.22" y2="25.4" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="5.08" y1="12.7" x2="35.56" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="35.56" y1="12.7" x2="66.04" y2="17.78" columns="8" rows="5" layer="94"/>
 <frame x1="5.08" y1="5.08" x2="109.22" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
-<text x="137.16" y="30.48" size="1.778" layer="97">To Do:
-* Sub-board to jumper to RoboClaw</text>
+<text x="111.76" y="22.86" size="1.778" layer="97">To Do:
+* Sub-board to jumper to RoboClaw (or use IDC cable)</text>
 <wire x1="63.5" y1="66.04" x2="63.5" y2="33.02" width="0.4064" layer="97" style="longdash"/>
 <wire x1="10.16" y1="175.26" x2="170.18" y2="175.26" width="0.4064" layer="97" style="longdash"/>
 <wire x1="170.18" y1="175.26" x2="170.18" y2="71.12" width="0.4064" layer="97" style="longdash"/>
@@ -3948,7 +3949,7 @@ unwanted messages, thereby reducing the host MCUs overhead. The MCP2515 interfac
 <wire x1="129.54" y1="33.02" x2="68.58" y2="33.02" width="0.4064" layer="97" style="longdash"/>
 <wire x1="129.54" y1="66.04" x2="129.54" y2="33.02" width="0.4064" layer="97" style="longdash"/>
 <text x="111.76" y="7.62" size="2.54" layer="97">5V power is supplied by the RoboClaw via the comms header.
-USB VIN and ICSP VIN are linked.
+ICSP VIN linked to RoboClaw 5V
 Fabricate with 2oz copper to provide adequate current capacity for high power tracks.</text>
 <text x="195.58" y="30.48" size="1.778" layer="97">D0:
 D1:
@@ -4122,6 +4123,9 @@ D13: LED</text>
 <instance part="U$6" gate="G$1" x="38.1" y="48.26" smashed="yes">
 <attribute name="NAME" x="30.48" y="53.975" size="1.778" layer="95"/>
 <attribute name="VALUE" x="30.48" y="40.64" size="1.778" layer="96"/>
+</instance>
+<instance part="U$7" gate="G$1" x="50.8" y="53.34" smashed="yes">
+<attribute name="VALUE" x="49.784" y="56.896" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4382,6 +4386,12 @@ D13: LED</text>
 <wire x1="106.68" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="5V"/>
 <wire x1="109.22" y1="48.26" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="5V"/>
+<wire x1="50.8" y1="50.8" x2="50.8" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
@@ -4647,11 +4657,6 @@ D13: LED</text>
 <wire x1="33.02" y1="139.7" x2="35.56" y2="139.7" width="0.1524" layer="91"/>
 <label x="35.56" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="48.26" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
-<label x="50.8" y="50.8" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$6" gate="G$1" pin="2"/>
-</segment>
 </net>
 <net name="D2_SDA" class="0">
 <segment>
@@ -4803,12 +4808,12 @@ D13: LED</text>
 <attribute name="VALUE" x="195.58" y="127" size="1.778" layer="96"/>
 </instance>
 <instance part="Q1" gate="G$1" x="55.88" y="38.1" smashed="yes">
-<attribute name="NAME" x="50.8" y="43.18" size="1.778" layer="95"/>
-<attribute name="VALUE" x="45.72" y="40.64" size="1.778" layer="96"/>
+<attribute name="NAME" x="55.88" y="40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="33.02" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="Q2" gate="G$1" x="121.92" y="38.1" smashed="yes">
-<attribute name="NAME" x="116.84" y="43.18" size="1.778" layer="95"/>
-<attribute name="VALUE" x="111.76" y="40.64" size="1.778" layer="96"/>
+<attribute name="NAME" x="121.92" y="40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="99.06" y="38.1" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="45.72" y="22.86" smashed="yes" rot="R90">
 <attribute name="NAME" x="46.99" y="24.3586" size="1.778" layer="95"/>
@@ -5310,21 +5315,19 @@ D13: LED</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,231.14,33.02,12V,,,,,"/>
-<approved hash="106,1,127,93.98,A0,,,,,"/>
-<approved hash="106,1,127,91.44,A1,,,,,"/>
-<approved hash="106,1,127,88.9,A2,,,,,"/>
-<approved hash="106,1,127,86.36,A3,,,,,"/>
-<approved hash="106,1,127,83.82,A4,,,,,"/>
-<approved hash="106,1,127,81.28,A5,,,,,"/>
-<approved hash="106,1,127,78.74,A6,,,,,"/>
-<approved hash="106,1,127,76.2,A7,,,,,"/>
-<approved hash="106,1,127,60.96,D4,,,,,"/>
-<approved hash="106,1,127,53.34,D7,,,,,"/>
-<approved hash="106,1,127,48.26,D8,,,,,"/>
-<approved hash="106,1,17.78,157.48,FS_RESET,,,,,"/>
-<approved hash="106,1,17.78,149.86,FS_SWD_CLK,,,,,"/>
-<approved hash="106,1,17.78,152.4,FS_SWD_DIO,,,,,"/>
+<approved hash="104,1,30.48,132.08,J11,VBUS,USB+,,,"/>
+<approved hash="106,1,147.32,144.78,A0,,,,,"/>
+<approved hash="106,1,147.32,147.32,A1,,,,,"/>
+<approved hash="106,1,147.32,149.86,A2,,,,,"/>
+<approved hash="106,1,147.32,152.4,A3,,,,,"/>
+<approved hash="106,1,147.32,154.94,A4,,,,,"/>
+<approved hash="106,1,147.32,157.48,A5,,,,,"/>
+<approved hash="106,1,147.32,88.9,D0,,,,,"/>
+<approved hash="106,1,147.32,91.44,D1,,,,,"/>
+<approved hash="106,1,147.32,83.82,D3_SCL,,,,,"/>
+<approved hash="106,1,147.32,124.46,D11,,,,,"/>
+<approved hash="106,1,147.32,99.06,D12,,,,,"/>
+<approved hash="106,1,147.32,139.7,HWB,,,,,"/>
 </errors>
 </schematic>
 </drawing>
