@@ -15,6 +15,8 @@ Features:
  * MOSFETs to release mechanical brakes.
  * CAN bus.
 
+![PCB render](WMC-v1_0-oblique-render.jpg)
+
 More information is available at:
 
   http://www.superhouse.tv/wmc
