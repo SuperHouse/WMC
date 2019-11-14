@@ -10,6 +10,8 @@
 #define MID_OUTPUT_VALUE 64
 #define MIN_OUTPUT_VALUE 0
 
+#define DEAD_SPOT_WIDTH  4
+
 // Pin assignments
 //#define LEFT_MOTOR_PIN  9
 //#define RIGHT_MOTOR_PIN 6
@@ -25,7 +27,7 @@
 #define ADDRESS 0x80
 
 //Velocity PID coefficients.
-#define KP 1.0
-#define KI 0.5
-#define KD 0.25
+#define KP 1.0     // 1.0
+#define KI 0.5     // 0.5
+#define KD 0.25    // 0.25
 #define QPPS 44000

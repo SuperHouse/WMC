@@ -42,7 +42,7 @@ double RightMotorCurrentValue = MID_OUTPUT_VALUE;
 // Recalculate the motor speed based on current and target
 long last_calculation_time = 0;
 unsigned int motor_output_calculation_interval = 100; // How often to update the motor speed
-int speed_output_increment = 1; // How big the jump should be per interval
+int speed_output_increment = 5; // How big the jump should be per interval
 
 // Check whether we need to apply the brakes
 long last_brake_check_time = 0;
@@ -125,7 +125,7 @@ void loop() {
    * target speed and relies on the RoboClaw to take care of smoothing.
    */
   // OPTION 1: Manage acceleration within the sketch.
-  /*
+  
   // Update the desired motor setting periodically
   if(current_time > (last_calculation_time + motor_output_calculation_interval))
   {
@@ -151,11 +151,11 @@ void loop() {
     
     last_calculation_time = current_time;
   }
-  */
+  
 
   // Option 2: Allow RoboClaw to control motor response.
-  LeftMotorCurrentValue = LeftMotorSetpoint;
-  RightMotorCurrentValue = RightMotorSetpoint;
+  //LeftMotorCurrentValue = LeftMotorSetpoint;
+  //RightMotorCurrentValue = RightMotorSetpoint;
 
 
   // See if either wheel is stationary, and apply the brake if it is
@@ -163,14 +163,14 @@ void loop() {
   {
     //long LeftMotorSpeed  = roboclaw.ReadSpeedM2(ADDRESS);
     //if(LeftMotorSpeed == 0)
-    if(LeftMotorCurrentValue >= (MID_OUTPUT_VALUE - 5) && LeftMotorCurrentValue <= (MID_OUTPUT_VALUE + 5))
+    if(LeftMotorCurrentValue >= (MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH) && LeftMotorCurrentValue <= (MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH))
     {
       digitalWrite(LEFT_BRAKE_CONTROL_PIN, LOW);
       //Serial.println("Left brake applied");
     }
     //long RightMotorSpeed = roboclaw.ReadSpeedM1(ADDRESS);
     //if(RightMotorSpeed == 0)
-    if(RightMotorCurrentValue >= (MID_OUTPUT_VALUE - 5) && RightMotorCurrentValue <= (MID_OUTPUT_VALUE + 5))
+    if(RightMotorCurrentValue >= (MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH) && RightMotorCurrentValue <= (MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH))
     {
       digitalWrite(RIGHT_BRAKE_CONTROL_PIN, LOW);
       //Serial.println("Right brake applied");
@@ -178,12 +178,12 @@ void loop() {
     last_brake_check_time = current_time;
   }
   // Release the brake if speed is set to anything except 0
-  if(LeftMotorCurrentValue < (MID_OUTPUT_VALUE - 5) || LeftMotorCurrentValue > (MID_OUTPUT_VALUE + 5))
+  if(LeftMotorCurrentValue < (MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH) || LeftMotorCurrentValue > (MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH))
   {
     digitalWrite(LEFT_BRAKE_CONTROL_PIN, HIGH);
     //Serial.println("Left brake released");
   }
-  if(RightMotorCurrentValue < (MID_OUTPUT_VALUE - 5) || RightMotorCurrentValue > (MID_OUTPUT_VALUE + 5))
+  if(RightMotorCurrentValue < (MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH) || RightMotorCurrentValue > (MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH))
   {
     digitalWrite(RIGHT_BRAKE_CONTROL_PIN, HIGH);
     //Serial.println("Right brake released");
@@ -246,6 +246,7 @@ void loop() {
     last_temperature_check_time = current_time;
     read_roboclaw_temperature();
     read_roboclaw_voltage();
+    read_roboclaw_current();
   }
 
   
@@ -385,9 +386,27 @@ void onReceive(int packetSize) {
         Serial.print("X=");
         Serial.print(integerValue, DEC);
       }
-
+      // The values we receive are between -75 (full reverse) and +75 (full forward)
+      // with 0 as the stop value. We need to convert that into a range that goes from
+      // 0 (full reverse) through 64 (stop) to 127 (full forward)
       axis_output = map(integerValue, -75, +75, MIN_OUTPUT_VALUE, MAX_OUTPUT_VALUE);
       XInputValue = constrain(axis_output, MIN_OUTPUT_VALUE, MAX_OUTPUT_VALUE);
+
+      // This block applies a dead spot around the "stop" middle value, but instead
+      // of just blocking out a small range of values, it offsets the outputted value
+      // by the size of the dead spot. This is so that when the input just moves past
+      // the dead spot, the value doesn't jump straight to a high value. It begins
+      // with the slowest possible speed just at the edge of the dead spot and goes
+      // up linearly from there. The same thing is done further down for the Y value.
+      if(XInputValue <= MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH)
+      {
+        XInputValue = XInputValue + DEAD_SPOT_WIDTH;
+      } else if(XInputValue >= MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH)
+      {
+        XInputValue = XInputValue - DEAD_SPOT_WIDTH;
+      } else {
+        XInputValue = MID_OUTPUT_VALUE;
+      }
     }
     if(CAN.packetId() == 0x13)  // Packet ID 0x13 for Y axis
     {
@@ -398,6 +417,15 @@ void onReceive(int packetSize) {
       }
       axis_output = map(integerValue, -75, +75, MIN_OUTPUT_VALUE, MAX_OUTPUT_VALUE);
       YInputValue = constrain(axis_output, MIN_OUTPUT_VALUE, MAX_OUTPUT_VALUE);
+      if(YInputValue <= MID_OUTPUT_VALUE - DEAD_SPOT_WIDTH)
+      {
+        YInputValue = YInputValue + DEAD_SPOT_WIDTH;
+      } else if(YInputValue >= MID_OUTPUT_VALUE + DEAD_SPOT_WIDTH)
+      {
+        YInputValue = YInputValue - DEAD_SPOT_WIDTH;
+      } else {
+        YInputValue = MID_OUTPUT_VALUE;
+      }
     }
 }
 
@@ -421,8 +449,8 @@ void read_roboclaw_current()
   int16_t temp_right = 0;
   
   roboclaw.ReadCurrents(ADDRESS, temp_right, temp_left);
-  roboclaw_left_current = temp_left / 10.0;
-  roboclaw_right_current = temp_right / 10.0;
+  roboclaw_left_current = temp_left / 100.0;
+  roboclaw_right_current = temp_right / 100.0;
 }
 
 //ReadCurrents(uint8_t address, int16_t &current1, int16_t &current2);
