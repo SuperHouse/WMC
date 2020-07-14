@@ -1,5 +1,6 @@
 // Debug options
 #define CAN_DEBUG false
+#define CAN_STATUS_REPORTS false
 #define OUTPUT_DEBUG true
 
 // Don't output more than this using PWM. Scale to make this 100% output
