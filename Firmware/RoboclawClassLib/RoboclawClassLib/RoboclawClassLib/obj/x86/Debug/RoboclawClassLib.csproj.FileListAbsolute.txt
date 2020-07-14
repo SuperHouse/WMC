@@ -1,0 +1,4 @@
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\bin\x86\Debug\RoboclawClassLib.dll
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\bin\x86\Debug\RoboclawClassLib.pdb
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\obj\x86\Debug\RoboclawClassLib.dll
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\obj\x86\Debug\RoboclawClassLib.pdb

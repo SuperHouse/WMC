@@ -1,0 +1,5 @@
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\obj\x86\Release\RoboclawClassLib.csprojResolveAssemblyReference.cache
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\bin\x86\Release\RoboclawClassLib.dll
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\bin\x86\Release\RoboclawClassLib.pdb
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\obj\x86\Release\RoboclawClassLib.dll
+C:\Users\Mr\Desktop\RoboclawClassLib\RoboclawClassLib\obj\x86\Release\RoboclawClassLib.pdb
