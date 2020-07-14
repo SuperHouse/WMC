@@ -38,8 +38,8 @@ project.
 
 Credits
 -------
-Jonathan Oxer <jon@oxer.com.au>
-Chris Fryer <chris.fryer78@gmail.com>
+ * Jonathan Oxer <jon@oxer.com.au>
+ * Chris Fryer <chris.fryer78@gmail.com>
 
 
 License
