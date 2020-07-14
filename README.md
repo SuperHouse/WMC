@@ -1,15 +1,18 @@
 Wheelchair Motor Controller
-============================
+===========================
 
-Controls two wheelchair motors using a RoboClaw motor driver. Outputs
-for a solenoid braking system, and CAN bus interface to communicate
-with other modules on the chair.
+Motion controller for an electric wheelchair using 24V DC motors, such
+as a Permobil F5.
+
+Controls two wheelchair motors using a RoboClaw motor driver. It also
+has outputs for a solenoid braking system, and a CAN bus interface to
+communicate with other modules on the chair.
 
 ![Wheelchair Motor Controller](Images/WMC-v1_0-oblique-render.jpg)
 
 Features:
 
- * Takes power from chair battery.
+ * Takes power from the chair battery.
  * Mounting location for RoboClaw motor driver.
  * Communicates with RoboClaw using serial commands.
  * MOSFETs to release mechanical brakes.
@@ -17,7 +20,7 @@ Features:
 
 More information is available at:
 
-  http://www.superhouse.tv/wmc
+  https://www.superhouse.tv/wmc
 
 
 Hardware
@@ -36,6 +39,7 @@ project.
 Credits
 -------
 Jonathan Oxer <jon@oxer.com.au>
+Chris Fryer <chris.fryer78@gmail.com>
 
 
 License
